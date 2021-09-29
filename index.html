@@ -28,13 +28,14 @@ body{
     font-style: italic;
     list-style: none;
     display:inline-block;
-    margin-right:110px;
+    margin-right:100px;
     font-size:25px;
 }
 .header li a{
     display: block;
     text-decoration: none;
     color:darkolivegreen;
+    
 }
 .header li a:hover{
     color: whitesmoke;
@@ -61,6 +62,25 @@ body{
  .header li i{
      margin-right: 3px;
  }
+ .header ul li:hover {
+     background-color:burlywood;
+ }
+ .dropdown1{
+     display: none;
+ }
+ .header ul li:hover .dropdown1{
+     display: block;
+     position: absolute;
+     background:linear-gradient(bisque,pink);
+     margin-top: 5px;
+     margin-left: -30px;
+ }
+ .header ul li:hover .dropdown1 ul{
+     display: block;
+     
+ }
+
+ 
     </style>
 </head>
 <body>
@@ -70,11 +90,20 @@ body{
             <h3>The Supreme Abode Of Lord Krishna</h3>
         </div>
         <div class="header">
+            <ul>
             <li><a href="#"><i class="fa fa-home"></i>Home</a></li>
             <li><a href="#"><i class="fas fa-info-circle"></i>About</a></li>
             <li><a href="#"><i class="fa fa-gopuram"></i>Temples</a></li>
             <li><a href="#"><i class="fas fa-hotel"></i>Accommodations</a></li>
-            <li><a href="#"><i class="fas fa-star"></i>Services</a></li>
+            <li><a href="#"><i class="fas fa-star"></i>Services</a>
+            <div class="dropdown1">
+                <ul>
+                   <li><a href="#">Hospitals</a></li>
+                   <li><a href="#"></a>Restaurants</li>
+                   <li><a href="#"></a>Tours & Travels</li>
+                </ul>
+            </div>
+            </li>
             <li><a href="#"><i class="fas fa-address-book"></i>Contact</a></li>
             </ul>
         </div>
