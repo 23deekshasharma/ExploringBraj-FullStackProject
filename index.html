@@ -7,80 +7,78 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
     <title>ExploringBraj</title>
     <style>
-*{padding: 0;margin: 0;box-sizing: border-box;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
-body{
-    background-color:beige;
-}
-.container{
-    width: 100%;
-    height: 100%; 
-}
-.header{
-    display: flex;
-    justify-content: center;
-    flex-direction:row;
-    height: 50px;
-    align-items: center;
-    margin-top: 15px;
-    background: linear-gradient(bisque,pink);
-}
-.header li{
-    font-style: italic;
-    list-style: none;
-    display:inline-block;
-    margin-right:100px;
-    font-size:25px;
-}
-.header li a{
-    display: block;
-    text-decoration: none;
-    color:darkolivegreen;
-    
-}
-.header li a:hover{
-    color: whitesmoke;
-}
- .top h2{
-  text-align: center;
-  font-family: cursive;
-  color: darkolivegreen;
-  font-weight: 1000;
-  font-size: 60px;
- }
- .top h3{
-     text-align: center;
-     font-family: cursive;
-     color: darkolivegreen;
-     font-size: 20px;
- } 
- .top h2 i:nth-child(1){
-     margin-right: 20px;
- }
- .top h2 i:nth-child(2){
-     margin-left: 20px;
- }
- .header li i{
-     margin-right: 3px;
- }
- .header ul li:hover {
-     background-color:burlywood;
- }
- .dropdown1{
-     display: none;
- }
- .header ul li:hover .dropdown1{
-     display: block;
-     position: absolute;
-     background:linear-gradient(bisque,pink);
-     margin-top: 5px;
-     margin-left: -30px;
- }
- .header ul li:hover .dropdown1 ul{
-     display: block;
-     
- }
+        *{padding: 0;margin: 0;box-sizing: border-box;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+        .container{
+            width: 100%;
+            height: 100%;
+        }
+        /*The top portion */
+        .top{
+            margin-top: 0px;
+            color: darkolivegreen;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            font-size: 20px;
+            top:0;
+          
+        }
+        .top h2 i:nth-child(1){
+            margin-right: 10px;
+        }
+        .top h2 i:nth-child(2){
+            margin-left: 10px;
+        }
+        .header{
+            background:linear-gradient(bisque,pink);
+            text-align: center;
+        }
+        .header ul{
+            list-style: none;
+            display: inline-flex;
+        }
+        .header ul li{
+            width: 230px;
+            margin: 10px;
+            padding: 10px;
+            
+        }
+        .header ul li a{
+            text-decoration: none;
+            color: darkolivegreen;
+            font-size: 20px;
+        }
+        .header ul li  :hover{
+            color: white;
+            background-color:indianred;
+            
+        }
+        .header li i{
+            margin-right:3px;
+        }
+        .dropdown1, .dropdown2,.dropdown3{
+            display: none;
+        }
+        .header ul li:hover .dropdown1, .dropdown2,.dropdown3{
+            display: block;
+            position: absolute;
+            background:linear-gradient(bisque,pink);
+            margin-top: 18px;
+            margin-left: -2px;
+        }
+        .header ul li:hover .dropdown1 ul{
+            display: block;
+        }
+        .header ul li:hover .dropdown1 ul li{
+            background:transparent;
+            border-bottom: 1px solid goldenrod;
+            width: 180px;
+        }
+        .header ul li .dropdown1:hover{
+            background-color: goldenrod;
+        }
 
- 
+
     </style>
 </head>
 <body>
@@ -93,21 +91,35 @@ body{
             <ul>
             <li><a href="#"><i class="fa fa-home"></i>Home</a></li>
             <li><a href="#"><i class="fas fa-info-circle"></i>About</a></li>
-            <li><a href="#"><i class="fa fa-gopuram"></i>Temples</a></li>
-            <li><a href="#"><i class="fas fa-hotel"></i>Accommodations</a></li>
-            <li><a href="#"><i class="fas fa-star"></i>Services</a>
-            <div class="dropdown1">
+            <li><a href="#"><i class="fa fa-gopuram"></i>Temples</a>
+                <div class="dropdown1">
+                    <ul>
+                        <li><a href="#">Temples</a></li>    
+                        <li><a href="#">Places</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#"><i class="fas fa-hotel"></i>Accommodations</a>
+            <div class="dropdown2">
                 <ul>
-                   <li><a href="#">Hospitals</a></li>
-                   <li><a href="#"></a>Restaurants</li>
-                   <li><a href="#"></a>Tours & Travels</li>
+                    <lii><a href="#">Hotels</a></li>
                 </ul>
             </div>
             </li>
+            <li><a href="#"><i class="fas fa-star"></i>Services</a>
+                <div class="dropdown3">
+                    <ul>
+                        <li><a href="#">Restaurants</a></li>
+                        <li><a href="#">Hospitals</a></li>
+                        <li><a href="#">EI</a></li>
+                    </ul>
+
+                </div>
+            </li>
             <li><a href="#"><i class="fas fa-address-book"></i>Contact</a></li>
             </ul>
-        </div>
+            
     </div>
+    
 </body>
-
 </html>
