@@ -1,111 +1,12 @@
-*{padding: 0;margin: 0;box-sizing: border-box;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
-        .container{
-            width: 100%;
-            height: 100%;
-        }
-        body{
-            background-color:beige;
-        }
-        .top{
-            margin-top: 0px;
-            color: darkolivegreen;
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-            font-size: 20px;
-            top:0;
-            background-color:beige;
-
-        }
-        .top h2 i:nth-child(1){
-            margin-right: 10px;
-        }
-        .top h2 i:nth-child(2){
-            margin-left: 10px;
-        }
-        .menu{
-            background: linear-gradient(bisque,pink);
-            text-align: center;
-            width: 100%;
-        }
-        .menu ul{
-            list-style: none;
-            display: inline-flex;
-        }
-        .menu ul li{
-            width: 100%;
-            margin: 2px 30px;
-            padding:8px 30px;
-            justify-content: space-between;
-        }
-        .menu ul li a{
-            text-decoration:none;
-            text-transform:uppercase;
-            color: darkolivegreen;
-            font-family: serif;
-            font-size: large;
-        }
-        .fa, .fas{
-            margin-right: 5px;
-            
-        }
-        .menu ul li:hover{
-            background-color:lightcoral;
-        }
-        /*The style code for about dropdown*/
-        .about{
-            display: none;
-        }
-        .menu ul li:hover .about{
-            display: block;
-            position: absolute;
-            background: linear-gradient(bisque,pink);
-            margin-top: 32px;
-            margin-left: -5px;
-        }
-        .menu ul li:hover .about ul{
-            display: block;
-        }
-        .menu ul li:hover .about ul li{
-            background: transparent;
-            border-bottom: 1px solid goldenrod;
-            width: 365px;
-        }
-        .menu ul li:hover .about ul li a{
-            color: darkolivegreen;
-        }
-        .menu ul li:hover .about ul li a:hover{
-            color: white;
-            background-color:indianred;
-            display: block;
-            padding: 10px;
-        }
-
-        /*The style code for temples dropdown*/
-        .temples{
-            display: none;
-        }
-        .menu ul li:hover .temples{
-            display: block;
-            position: absolute;
-            background: linear-gradient(bisque,pink);
-            margin-top: 32px;
-            margin-left: -5px;
-        }
-        .menu ul li:hover .temples ul{
-            display: block;
-        }
-        .menu ul li:hover .temples ul li{
-            background: transparent;
-            border-bottom: 1px solid goldenrod;
-            width: 365px;
-        }
-        .menu ul li:hover .temples ul li a{
-            color: darkolivegreen;
-        }
-        .menu ul li:hover .temples ul li a:hover{
-            color: white;
-            background-color:indianred;
-            display: block;
-            padding: 10px;
-        }
+*{padding: 0;margin: 0;box-sizing: border-box;}
+.container{
+    width: 100%;
+    height: 100vh;
+}
+.header{
+    height: 30px;
+    width: 100%;
+    background-color: purple;
+    justify-content: center;
+    background-origin: padding-box;
+}
