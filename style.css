@@ -11,6 +11,8 @@
     padding: 0;
     background-origin: padding-box;
     color: white;
+    z-index: 1000;
+    position: relative;
 }
 .header h1{
     font-size:29px;
@@ -114,6 +116,7 @@
 .templesdd ul li:hover{
     background-color:gold;
     display: block;
+    width: 100px;
 }
 .header ul li:hover .templesdd ul li{
     border-bottom: 1px solid goldenrod;
@@ -145,6 +148,7 @@
 .gallerydd ul li:hover{
     background-color:gold;
     display: block;
+    width: 100px;
 }
 .header ul li:hover .gallerydd ul li{
     border-bottom: 1px solid goldenrod;
@@ -173,17 +177,20 @@
 }
 .servicesdd ul li:hover{
     background-color:gold;
-    width: 95px;
+    width: 100px;
     display: block;
 }
 .header ul li:hover .servicesdd ul li{
     border-bottom: 1px solid goldenrod;
 }
-footer{
+.footer{
     background-color: rgba(53, 10, 79, .9);
     color: white;
     text-align: center;
     padding: 20px;
+    
+    position:relative;
+    z-index: -2;
 }
 
 
