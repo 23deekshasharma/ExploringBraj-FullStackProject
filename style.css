@@ -188,11 +188,10 @@
     color: white;
     text-align: center;
     padding: 20px;
-    
     position:relative;
     z-index: -2;
+    margin-top: 150px;
 }
-
 
 
 
