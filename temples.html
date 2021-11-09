@@ -7,5 +7,329 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
     <link rel="stylesheet" href="./style.css">
     <title>Temples</title>
+    <style>
+        .container{
+            
+            
+        }
+       
+        /* Slideshow container */
+.slideshow-container {
+  max-width:100%;
+  width: 700px;
+  height: auto;
+  position:relative;
+  margin: auto;
+  margin-top: 10px;
+  border:mediumseagreen 2px groove;
+}
+
+/* Caption text */
+.text {
+  color: black;
+  font-size: 20px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+.box {
+        width: 20%;
+        float: left;
+        margin: 60px 35px;
+        background-color: #fff;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
+      }
+      .box > img {
+        width: 100%;
+        height: 250px;
+        border-radius: 8px;
+        margin-bottom: 10px;
+      }
+      .box > h4 {
+        margin: 0px 10px;
+        text-align: center;
+      }
+      .box > p {
+        margin: 10px;
+        font-size: 15px;
+        text-align: justify;
+        line-height: 25px;
+      }
+      .box > a {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        color: #fff;
+        background-color: red;
+        text-decoration: none;
+        padding: 10px;
+        border-radius: 8px;
+      }
+      .box a:hover {
+        background-color: blue;
+      }
+
+      @media screen and (min-width: width 500px) {
+        .box {
+          width: 90%;
+          /* float: left; */
+          margin: 10px 5px;
+          background-color: #fff;
+          padding: 5px;
+          border-radius: 3px;
+        }
+      }
+        
+
+    </style>
     </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                 <h1><i class="fa fa-dharmachakra" id="1"></i>Vrindavan<i class="fa fa-dharmachakra" id="2"></i></h1>
+                 <p>The Abode Of Lord Krsna</p>
+                   <ul>
+                    <li><a href="#"><i class="fa fa-home"></i>Home</a></li>
+                    <li><a href="#"><i class="fas fa-info-circle"></i>About</a>
+                        <div class="aboutdd">
+                            <ul>
+                                <li><a href="aboutvrindavan.html">Vrindavan Dham</a></li>
+                                <li><a href="#">Significance</a></li>
+                            </ul>
+                        </div>
+                    <li><a href="#"><i class="fa fa-gopuram"></i>Temples</a>
+                        <div class="templesdd">
+                            <ul>
+                                <li><a href="temples.html">Temples</a></li>
+                                <li><a href="#">Ghats</a></li>
+                                <li><a href="#">Villages</a></li>
+                                <li><a href="#">Locations</a></li>
+                                <li><a href="#">Temple Timings</a></li>
+    
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#"><i class="fas fa-photo-video"></i>Gallery</a>
+                        <div class="gallerydd">
+                            <ul>
+                                <li><a href="#">Photos</a></li>
+                                <li><a href="#">Videos</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#"><i class="fas fa-star"></i>Services</a>
+                        <div class="servicesdd">
+                            <ul>
+                                <li><a href="#">Local-Travels</a></li>
+                                <li><a href="#">Restaurants</a></li>
+                                <li><a href="hotel.html">Hotels</a></li>
+                                <li><a href="#">Hospitals</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#"><i class="fas fa-address-book"></i>Contact Us</a></li>
+                 </ul> 
+            </div>
+
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                  <div class="numbertext">1 / 5</div>
+                  <img src="./images/Govinddevtemple_adobespark.jpg" style="width:100%">
+                  <div class="text">Radha-GovindDevJi Temple, Vrindavan</div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 5</div>
+                  <img src="./images/1593315224_prem_mandir_daytime_adobespark.jpg" style="width:100%">
+                  <div class="text">Prem Mandir, Vrindavan</div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">3 / 5</div>
+                  <img src="./images/rangji temple_adobespark.jpg" style="width:100%">
+                  <div class="text">Sri RangJi Mandir, Vrindavan</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 5</div>
+                    <img src="./images/iskcon temple_adobespark.jpg" style="width:100%">
+                    <div class="text">Sri Sri Krishna Balram Temple,Vrindavan</div>
+                  </div>
+
+                  <div class="mySlides fade">
+                    <div class="numbertext">5 / 5</div>
+                    <img src="./images/radharamanji temple_adobespark.jpg" style="width:100%">
+                    <div class="text">Sri RadhaRamanLal Temple,Vrindavan</div>
+                  </div>
+                
+                </div>
+                <br>
+                
+                <div style="text-align:center">
+                  <span class="dot"></span> 
+                  <span class="dot"></span> 
+                  <span class="dot"></span> 
+                  <span class="dot"></span> 
+                  <span class="dot"></span> 
+                </div>
+                <div class="box">
+                    <img src="./temples Images/radharaman.jpg" alt="RadhaRamanJi"/>
+                    <h4>Sri RadhaRaman Temple</h4>
+                    <p>
+                        Sri Radha Raman Temple, is an early modern period Hindu temple in Vrindavan, India dedicated to Lord Krishna as Radha Ramana. The temple was constructed at the request of Gopala Bhatta Goswami in 1542 AD....
+                    </p>
+              
+                    <a href="practical-5-html.html">Read More</a>
+                  </div>
+                  <div class="box">
+                    <img src="./temples Images/bankeybihariji.jpg" alt="" />
+                    <h4>BankeyBihari Temple</h4>
+                    <p>
+                        Bankey Bihari Temple is a Hindu temple of the Radha-vallabha tradition dedicated to Krishna, in the holy city of Vrindavan in the Mathura district of Uttar Pradesh, India. It was constructed in 1864. Situated near Shri Radha Vallabha Temple.....
+                    </p>
+              
+                    <a href="practical-5-css.html">Read More</a>
+                  </div>
+                  <div class="box">
+                    <img src="./temples Images/radha-vallabh-1.jpg" alt="" />
+                    <h4>Sri RadhaVallabh Temple</h4>
+                    <p>
+                        The Shri Radha Vallabh Temple in Vrindavan, Mathura is a very famous temple of the same preaching. This temple is among the most famous 7 temples of Thakur of Vrindavan including.....
+                    </p>
+              
+                    <a href="practical-5-jq.html">Read More</a>
+                  </div>
+                  <div class="box">
+                    <img src="./temples Images/radha madanmohan.jpg" alt="" />
+                    <h4>Sri RadhaMadanMohan Temple</h4>
+                    <p>
+                        Shri Radha Madan Mohan Temple, is a Hindu temple situated in Vrindavan of Indian state of Uttar Pradesh. It is one of the oldest and highly revered temple of Vrindavan.The presiding deity of the temple is ....
+                    </p>
+              
+                    <a href="practical-5-boot.html">Read More</a>
+                  </div>
+                  <div class="box">
+                    <img src="./temples Images/radhaGopinath.jpg" alt="" />
+                    <h4>Sri Radha Gopinath Temple</h4>
+                    <p>
+                        Radha Gopinath is considered to be one among the oldest temple in vrindavan located at the bank of Yamuna Ji.
+                        Vrajanabha, Lord Krishna's great-grandson, installed the original Gopinath Deity in Vrindavan.... </p>
+              
+                    <a href="practical-5-boot.html">Read More</a>
+                  </div>
+                </div>
+                <div class="box">
+                    <img src="./temples Images/radhashyamsundar.jpg" alt="" />
+                    <h4>Sri RadhaShyamSundar Temple</h4>
+                    <p>Sri Sri Radha Shyam Sundar Temple is one of the holiest temples in the region. And it is revered by all Vaishnavas.
+
+                        The place is popular because of the devotion of Sri Shyamananda prabhu to Sri Krishna and Radha....
+                         </p>
+              
+                    <a href="practical-5-boot.html">Read More</a>
+                  </div>
+                  <div class="box">
+                    <img src="./temples Images/radhagokulananda.jpeg" alt="" />
+                    <h4>Sri Radha Gokulananda Temple</h4>
+                    <p>
+                        Radha Gokulananda Temple is an ancient shrine, located at Vrindavan, in Uttar Pradesh. It is in between the Kesi Ghat and the Radha-Raman Temple.
+
+                        In this temple there is the small Radha-Vinoda Deities of Lokanatha Gosvami...  </p>
+              
+                    <a href="practical-5-boot.html">Read More</a>
+                  </div>
+                  <div class="box">
+                    <img src="./temples Images/radhadamodara.jpeg" alt="" />
+                    <h4>Sri Radha Damodara Temple</h4>
+                    <p>Shri Radha Damodar Temple was first established by Jiva Goswami in the year 1542 C.E and was located at Seva Kunj of Vrindavan. Later, In 1670, when the Muslim emperor Aurangazeb invaded Vrindavana...
+                       </p>
+              
+                    <a href="practical-5-boot.html">Read More</a>
+                  </div>
+                  <div class="box">
+                    <img src="./temples Images/radhagovind.jpg" alt="" />
+                    <h4>Sri Radha Govind Temple</h4>
+                    <p>
+                       </p>
+              
+                    <a href="practical-5-boot.html">Read More</a>
+                  </div>
+                  
+        
+        
+                <script>
+                    var slideIndex = 0;
+                    showSlides();
+                    
+                    function showSlides() {
+                      var i;
+                      var slides = document.getElementsByClassName("mySlides");
+                      var dots = document.getElementsByClassName("dot");
+                      for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";  
+                      }
+                      slideIndex++;
+                      if (slideIndex > slides.length) {slideIndex = 1}    
+                      for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                      }
+                      slides[slideIndex-1].style.display = "block";  
+                      dots[slideIndex-1].className += " active";
+                      setTimeout(showSlides, 2000); // Change image every 2 seconds
+                    }
+                    </script>
+                
+    </body>
     </html>
