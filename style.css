@@ -3,6 +3,7 @@
     width: 100%;
     height: 100%;
     background: radial-gradient(white,burlywood);
+    background-color: #fff;
 }
 /*For the first image*/
 .image{
@@ -23,8 +24,8 @@
 .image img{
     background-size: cover;
     width:100%;
-    height: 450px;
-    margin: 10px 0px;
+    height: 470px;
+    margin: 2px 0px;
     z-index: 100;
 }
 /*Code for the header*/
@@ -212,11 +213,11 @@
 .box {
     width: 20%;
     float: left;
-    margin: 60px 35px;
-    background:linear-gradient(to right top,gold,white);
+    margin: 20px 35px;
+    background:linear-gradient(to right top,indigo,white);
     padding: 15px;
     border-radius: 8px;
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
+    box-shadow: 1 5px 5px rgba(0, 0, 0, 0.15);
   }
   .box > img {
     width: 100%;
@@ -227,6 +228,7 @@
   .box > h4 {
     margin: 0px 10px;
     text-align: center;
+    color:cornsilk;
   }
   .box > p {
     margin: 10px;
@@ -234,6 +236,8 @@
     text-align: justify;
     line-height: 25px;
     padding: 0;
+    font-family:cursive;
+    color:whitesmoke
   }
   .box > a {
     display: block;
@@ -251,19 +255,36 @@
     color: white;
   }
 
-  @media screen and (min-width: width 500px) {
-    .box {
-      width: 90%;
-      /* float: left; */
-      margin: 10px 5px;
-      background-color: #fff;
-      padding: 5px;
-      border-radius: 3px;
-    }
+  .second h1{
+      text-align: center;
+      font-family: cursive;
   }
-
-
-
-
-
-
+   /*Temple Timings*/
+   .timings{
+       text-align: center;
+       font-family: cursive;
+       margin-right: 2%;
+       margin-left: 1%;
+       margin-bottom: 4%;
+   }
+   table, th, td {
+    border: 1px solid white;
+    border-collapse: collapse;
+  }
+  th, td {
+    background-color: burlywood;
+  }
+  table{
+      margin-top:2%;
+  }
+  td{
+      color:black;
+  }
+ /*Footer*/
+ .footer{
+     background-color: rgba(53, 10, 79, .9);
+     color: whitesmoke;
+     text-align: center;
+     padding-top: 20px;
+     padding-bottom: 20px;
+ }
